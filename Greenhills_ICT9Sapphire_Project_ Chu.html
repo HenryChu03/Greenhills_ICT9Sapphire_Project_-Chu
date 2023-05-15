@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project</title>
+</head>
+<body><br><br>
+    <center><h1>Length Converter</h1>
+    <tr>
+        <center>Convert Millimeters to ____
+            <center><p><input type="text" id="length"></p>
+            <input type="button" onClick="MmtCm()" value="To Centimeter">
+            <input type="button" onClick="MmTM()" value=" To Meter">
+            <input type="button" onClick="MmTKm()" value=" To Kilometer">
+        </th>
+    </tr>
+</table>
+</body>
+<script>
+function MmtCm(){
+        var x, y
+        x = (document.getElementById('length').value);
+        y = 10;      
+        alert(x / y);
+    }
+    function MmTM(){
+        var x, y
+        x = (document.getElementById('length').value);
+        y = 1000;       
+        alert(x / y);
+    }
+    function MmTKm(){
+        var x, y
+        x = (document.getElementById('length').value);
+        y = 1e+6;     
+        alert(x / y);
+    }
+</script>
+</html>
